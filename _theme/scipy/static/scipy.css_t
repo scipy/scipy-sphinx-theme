@@ -38,6 +38,22 @@ tt.xref {
     padding-left: 0px;
 }
 
+tt.descname {
+    font-size: 16px;
+}
+
+dl.class > dt > em {
+    font-weight: normal;
+}
+
+dl.function > dt > em {
+    font-weight: normal;
+}
+
+dl.method > dt > em {
+    font-weight: normal;
+}
+
 table.field-list {
     border-collapse: collapse;
     border-spacing: 5px;
