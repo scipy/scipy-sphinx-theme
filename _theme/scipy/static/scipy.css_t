@@ -99,9 +99,9 @@ h6 tt { font: inherit; border-bottom: none; }
 div#spc-section-body h1 { color: rgb(85, 85, 85); }
 div#spc-section-body h2 { color: rgb(85, 85, 85); }
 div#spc-section-body h3 { color: rgb(85, 85, 85); }
-div#spc-section-body h4 { color: rgb(85, 85, 85); }
-div#spc-section-body h5 { color: rgb(85, 85, 85); }
-div#spc-section-body h6 { color: rgb(85, 85, 85); }
+div#spc-section-body h4 { color: rgb(85, 85, 85); border-bottom: none; }
+div#spc-section-body h5 { color: rgb(85, 85, 85); border-bottom: none; }
+div#spc-section-body h6 { color: rgb(85, 85, 85); border-bottom: none; }
 
 table.citation {
     border: none;
@@ -117,7 +117,28 @@ div.seealso {
 }
 
 div.seealso dt {
-    display: inline-block;
+    float: left;
+    clear: left;
+    min-width: 4em;
+    padding-right: 1em;
+}
+
+div.seealso dd {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+div.warning {
+    background-color: #ffe4e4;
+    border: 1px solid #f66;
+}
+
+p.admonition-title {
+    display: inline;
+}
+
+p.admonition-title:after {
+    content: ":";
 }
 
 pre {
