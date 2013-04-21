@@ -6,12 +6,19 @@
 Welcome to scipy-sphinx-style's documentation!
 ==============================================
 
-This is a test file, the theme is under `_theme`.
+The theme is under `_theme`, this document contains various test
+pages.
 
 Contents:
 
 .. toctree::
    :maxdepth: 2
+
+   test_optimize
+   test_autodoc
+   test_autodoc_2
+   test_autodoc_3
+   test_autodoc_4
 
 Indices and tables
 ==================
