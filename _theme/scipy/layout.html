@@ -19,6 +19,12 @@
   {%- set titlesuffix = "" %}
 {%- endif %}
 
+{%- if top_logo %}
+<div class="top-logo">
+    <img class="top-logo" src="{{ pathto('_static/' + top_logo, 1) }}"/>
+</div>
+{%- endif %}
+
 {%- macro relbar_top() %}
     <ul class="nav nav-pills pull-left">
         {%- block rootrellink %}
