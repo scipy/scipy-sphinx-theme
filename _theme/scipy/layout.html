@@ -27,6 +27,9 @@
 
 {%- macro relbar_top() %}
     <ul class="nav nav-pills pull-left">
+        {%- for link in theme_rootlinks %}
+        <li class="active"><a href="{{ link[0] }}">{{ link[1] }}</a></li>
+        {%- endfor %}
         {%- block rootrellink %}
         <li class="active"><a href="{{ pathto(master_doc) }}">{{ shorttitle|e }}</a></li>
         {%- endblock %}
@@ -188,12 +191,10 @@
     </div>
 {%- endblock %}
 
-    <div class="container">
-    <div class="header">
+    <div class="container container-navbar-bottom">
       <div class="spc-navbar">
         {{ relbar_bottom() }}
       </div>
-    </div>
     </div>
 
 {%- block footer %}

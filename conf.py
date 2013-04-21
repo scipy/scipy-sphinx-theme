@@ -19,6 +19,11 @@ pygments_style = 'sphinx'
 html_theme = 'scipy'
 html_theme_path = ['_theme']
 html_logo = '_static/scipyshiny_small.png'
+html_theme_options = {
+    "edit_link": "true",
+    "rootlinks": [("http://scipy.org/", "Scipy.org"),
+                  ("http://docs.scipy.org/", "Docs")]
+}
 
 pngmath_latex_preamble = r"""
 \usepackage{color}
