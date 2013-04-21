@@ -16,6 +16,12 @@ I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) .
 
 .PHONY: help clean html dirhtml singlehtml pickle json htmlhelp qthelp devhelp epub latex latexpdf text man changes linkcheck doctest gettext
 
+css: $(wildcard _theme/scipy/static/css/*.css)
+
+_theme/scipy/static/css/%.css: _theme/scipy/static/less/%.less
+	lessc $^ > $@.new
+	mv -f $@.new $@
+
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
 	@echo "  html       to make standalone HTML files"
