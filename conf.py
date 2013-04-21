@@ -14,11 +14,11 @@ release = '0.1'
 exclude_patterns = ['_build']
 pygments_style = 'sphinx'
 
-
 # -- Options for HTML output ---------------------------------------------------
 
 html_theme = 'scipy'
 html_theme_path = ['_theme']
+html_logo = '_static/scipyshiny_small.png'
 
 pngmath_latex_preamble = r"""
 \usepackage{color}
