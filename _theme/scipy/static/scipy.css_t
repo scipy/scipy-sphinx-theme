@@ -1,0 +1,28 @@
+/*
+ * sphinxdoc.css_t
+ * ~~~~~~~~~~~~~~~
+ *
+ * Sphinx stylesheet -- sphinxdoc theme.  Originally created by
+ * Armin Ronacher for Werkzeug.
+ *
+ * :copyright: Copyright 2007-2011 by the Sphinx team, see AUTHORS.
+ * :license: BSD, see LICENSE for details.
+ *
+ */
+
+@import url("basic.css");
+
+@import url("css/scipy-central.css");
+
+tt {
+   color: inherit;
+   font: 14px/1.0 'Inconsolata', Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+}
+
+table.citation {
+   border: none;
+}
+
+div.sphinxsidebarwrapper {
+   overflow: hidden;
+}
