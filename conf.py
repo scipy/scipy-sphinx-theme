@@ -38,19 +38,21 @@ import scipy as sp
 np.random.seed(123)
 """
 plot_include_source = True
-plot_formats = [('png', 100), 'pdf']
+plot_formats = [('png', 96), 'pdf']
 plot_html_show_formats = False
 
 import math
 phi = (math.sqrt(5) + 1)/2
 
+font_size = 13*72/96.0  # 13 px
+
 plot_rcparams = {
-    'font.size': 8,
-    'axes.titlesize': 8,
-    'axes.labelsize': 8,
-    'xtick.labelsize': 8,
-    'ytick.labelsize': 8,
-    'legend.fontsize': 8,
+    'font.size': font_size,
+    'axes.titlesize': font_size,
+    'axes.labelsize': font_size,
+    'xtick.labelsize': font_size,
+    'ytick.labelsize': font_size,
+    'legend.fontsize': font_size,
     'figure.figsize': (3*phi, 3),
     'figure.subplot.bottom': 0.2,
     'figure.subplot.left': 0.2,
