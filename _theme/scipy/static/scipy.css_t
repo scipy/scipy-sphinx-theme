@@ -99,7 +99,11 @@ td.field-body blockquote {
     padding-left: 30px;
 }
 
-td.field-body blockquote p {
+td.field-body blockquote p,
+dl.class blockquote p,
+dl.function blockquote p,
+dl.method blockquote p 
+{
     font-family: inherit;
     font-size: inherit;
     font-weight: inherit;
@@ -198,3 +202,4 @@ div.top-scipy-org-logo-header {
     padding: 5px;
     box-shadow: 0px 0px 3px rgb(136, 136, 136);
 }
+
