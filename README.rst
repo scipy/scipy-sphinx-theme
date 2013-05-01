@@ -21,6 +21,11 @@ configuration variable:
    breadcrumb list on the top left. You can override it by defining
    an `edit_link` block in ``searchbox.html``.
 
+.. attribute:: sidebar
+
+   One of ``"left"``, ``"right"``, ``"none"``.
+   Defines where the sidebar should appear.
+
 The following blocks are defined:
 
 .. attribute:: searchbox.html:edit_link

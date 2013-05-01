@@ -176,8 +176,15 @@
     <div class="container">
       <div class="main">
 	<div class="row-fluid">
+	  {%- if theme_sidebar == 'left' -%}
           {{ sidebar() }}
+	  {%- endif %}
+	  {%- if theme_sidebar == 'none' -%}
+          <div class="span1"></div>
+          <div class="span10">
+	  {% else %}
           <div class="span9">
+	  {%- endif %}
   {%- block document %}
         <div class="bodywrapper">
           <div class="body" id="spc-section-body">
@@ -186,6 +193,11 @@
         </div>
   {%- endblock %}
           </div>
+	  {%- if theme_sidebar == 'right' -%}
+          {{ sidebar() }}
+	  {%- elif theme_sidebar == 'none' -%}
+          <div class="span1"></div>
+	  {%- endif %}
         </div>
       </div>
     </div>
