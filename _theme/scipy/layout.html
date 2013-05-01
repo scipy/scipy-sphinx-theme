@@ -19,12 +19,6 @@
   {%- set titlesuffix = "" %}
 {%- endif %}
 
-{%- if top_logo %}
-<div class="top-logo">
-    <img class="top-logo" src="{{ pathto('_static/' + top_logo, 1) }}"/>
-</div>
-{%- endif %}
-
 {%- macro relbar_top() %}
     <ul class="nav nav-pills pull-left">
         {%- for link in theme_rootlinks %}
@@ -40,7 +34,7 @@
     </ul>
 {%- endmacro %}
 
-{%- macro relbar_bottom() %}
+{%- macro relbar_top_right() %}
     <ul class="nav nav-pills pull-right">
         {%- for rellink in rellinks %}
         <li class="active">
@@ -49,6 +43,9 @@
         </li>
         {%- endfor %}
     </ul>
+{%- endmacro %}
+
+{%- macro relbar_bottom() %}
 {%- endmacro %}
 
 {%- macro sidebar() %}
@@ -164,17 +161,20 @@
   </head>
   <body>
 {%- block header %}{% endblock %}
-    <div class="container">
-    <div class="header">
-      <div class="spc-navbar">
-        {{ relbar_top() }}
-      </div>
-    </div>
-    </div>
 
 {%- block content %}
     <div class="container">
       <div class="main">
+{%- block navbar %}
+	<div class="row-fluid">
+	  <div class="span12">
+	    <div class="spc-navbar">
+              {{ relbar_top() }}
+              {{ relbar_top_right() }}
+	    </div>
+	  </div>
+	</div>
+{% endblock %}
 	<div class="row-fluid">
 	  {%- if theme_sidebar == 'left' -%}
           {{ sidebar() }}

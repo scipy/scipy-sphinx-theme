@@ -1,4 +1,5 @@
-/*
+/* -*- css -*-
+ *
  * sphinxdoc.css_t
  * ~~~~~~~~~~~~~~~
  *
@@ -20,6 +21,10 @@ div.container-navbar-bottom {
 
 div.container-navbar-bottom div.spc-navbar {
     margin-top: 0;
+}
+
+div.spc-navbar {
+    margin: 0;
 }
 
 tt {

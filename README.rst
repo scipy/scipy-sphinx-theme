@@ -28,6 +28,10 @@ configuration variable:
 
 The following blocks are defined:
 
+.. attribute:: layout.html:header
+   
+   Block at the top of the page, for logo etc.
+
 .. attribute:: searchbox.html:edit_link
 
    Edit link HTML code to paste in the left sidebar, if `edit_link` is
