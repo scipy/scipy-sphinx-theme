@@ -26,6 +26,13 @@ configuration variable:
    One of ``"left"``, ``"right"``, ``"none"``.
    Defines where the sidebar should appear.
 
+.. attribute:: scipy_org_logo
+
+   Whether to plaster the scipy.org logo on top.
+
+   You can use your own logo by overriding the :attr:`layout.html:header`
+   block.
+
 The following blocks are defined:
 
 .. attribute:: layout.html:header
