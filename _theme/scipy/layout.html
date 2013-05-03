@@ -25,7 +25,9 @@
         <li class="active"><a href="{{ link[0] }}">{{ link[1] }}</a></li>
         {%- endfor %}
         {%- block rootrellink %}
+	{% if pagename != master_doc %}
         <li class="active"><a href="{{ pathto(master_doc) }}">{{ shorttitle|e }}</a></li>
+	{% endif %}
         {%- endblock %}
         {%- for parent in parents %}
           <li class="active"><a href="{{ parent.link|e }}" {% if loop.last %}{{ accesskey("U") }}{% endif %}>{{ parent.title }}</a></li>
