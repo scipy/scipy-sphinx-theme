@@ -267,29 +267,5 @@
     </div>
     </div>
 {%- endblock %}
-
-<script type="text/javascript">
-        $('.dropdown-toggle').dropdown()
-</script>
-
-<script>
-$(document).ready(function()
-{
-  //Handles menu drop down
-  $('.dropdown-menu').find('form').click(function (e) {
-        e.stopPropagation();
-        });
-  });
-</script>
-
-<script type="text/javascript">
-        //handles accordion arrow-up and down in pages
-        $('.accordion-group').collapse();
-        $('.accordion-group').on('show hide', function(e)
-                { 
-                        $(e.target).siblings('.accordion-heading').find('.accordion-toggle i').toggleClass('icon-arrow-down icon-arrow-up', 200); 
-                });
-</script>
-
   </body>
 </html>
