@@ -203,3 +203,10 @@ div.top-scipy-org-logo-header {
     box-shadow: 0px 0px 3px rgb(136, 136, 136);
 }
 
+table.docutils td, table.docutils th {
+    border: none;
+}
+
+table.docutils {
+    margin-bottom: 9.5px;
+}
