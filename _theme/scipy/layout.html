@@ -96,11 +96,10 @@
         HAS_SOURCE:  {{ has_source|lower }}
       };
     </script>
-    <script type="text/javascript" src="{{ pathto('_static/js/jquery.min.js', 1) }}"></script>
-    <script type="text/javascript" src="{{ pathto('_static/js/bootstrap.min.js', 1) }}"></script>
     {%- for scriptfile in script_files %}
     <script type="text/javascript" src="{{ pathto(scriptfile, 1) }}"></script>
     {%- endfor %}
+    <script type="text/javascript" src="{{ pathto('_static/js/copybutton.js', 1) }}"></script>
 {%- endmacro %}
 
 {%- macro css() %}
