@@ -44,19 +44,48 @@ tt.literal {
 }
 
 a tt.literal {
-    border-bottom: none;
+    border: none;
     background-color: inherit;
 }
 
 tt.xref {
     font-family: inherit;
-    border-bottom: none;
+    border: none;
     background-color: inherit;
     font-weight: normal;
     padding-left: 0px;
 }
 
 tt.descname {
+    font-size: 16px;
+}
+
+code {
+    color: inherit;
+    font: inherit;
+    padding: inherit;
+    border: inherit;
+}
+
+code.literal {
+    font-family: monospace;
+    padding-left: 2px;
+    background-color: rgb(242, 242, 242);
+}
+
+a code.literal {
+    border: none;
+    background-color: inherit;
+}
+
+code.xref {
+    font-family: inherit;
+    border-bottom: none;
+    background-color: inherit;
+    padding-left: 0px;
+}
+
+code.descname {
     font-size: 16px;
 }
 
@@ -174,6 +203,13 @@ h3 tt { font: inherit; border-bottom: none; }
 h4 tt { font: inherit; border-bottom: none; }
 h5 tt { font: inherit; border-bottom: none; }
 h6 tt { font: inherit; border-bottom: none; }
+
+h1 code { font: inherit; border: none; background-color: inherit; padding: inherit; }
+h2 code { font: inherit; border: none; background-color: inherit; padding: inherit; }
+h3 code { font: inherit; border: none; background-color: inherit; padding: inherit; }
+h4 code { font: inherit; border: none; background-color: inherit; padding: inherit; }
+h5 code { font: inherit; border: none; background-color: inherit; padding: inherit; }
+h6 code { font: inherit; border: none; background-color: inherit; padding: inherit; }
 
 div#spc-section-body h1 { color: rgb(85, 85, 85); }
 div#spc-section-body h2 { color: rgb(85, 85, 85); }
