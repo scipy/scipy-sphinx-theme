@@ -7,7 +7,7 @@ scipy-sphinx-theme
 Theme options
 -------------
 
-The theme takes the followin options in the `html_options`
+The theme takes the following options in the `html_options`
 configuration variable:
 
 - ``edit_link``
