@@ -1,6 +1,6 @@
 needs_sphinx = '1.1'
 
-extensions = ['sphinx.ext.autodoc', 'sphinx.ext.pngmath', 'numpydoc',
+extensions = ['sphinx.ext.autodoc', 'sphinx.ext.imgmath', 'numpydoc',
               'sphinx.ext.intersphinx', 'sphinx.ext.coverage',
               'sphinx.ext.autosummary', 'matplotlib.sphinxext.plot_directive']
 
@@ -28,13 +28,6 @@ html_theme_options = {
                   ("http://docs.scipy.org/", "Docs")]
 }
 
-pngmath_latex_preamble = r"""
-\usepackage{color}
-\definecolor{textgray}{RGB}{51,51,51}
-\color{textgray}
-"""
-pngmath_use_preview = True
-pngmath_dvipng_args = ['-gamma 1.5', '-D 96', '-bg Transparent']
 
 #------------------------------------------------------------------------------
 # Plot style
