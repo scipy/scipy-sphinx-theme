@@ -29,7 +29,7 @@ The module contains:
 
 5. Multivariate equation system solvers (:func:`root`) using a variety of
    algorithms (e.g. hybrid Powell, Levenberg-Marquardt or large-scale
-   methods such as Newton-Krylov).
+   methods such as Newton-Krylov [KK]_).
 
 Below, several examples demonstrate their basic usage.
 
@@ -771,7 +771,8 @@ lot more depth to this topic than is shown here.
 
 .. rubric:: References
 
-Some further reading and related software:
+Some further reading and related software for solving large-scale problems
+( [PP]_, [AMG]_):
 
 .. [KK] D.A. Knoll and D.E. Keyes, "Jacobian-free Newton-Krylov methods",
         J. Comp. Phys. 193, 357 (2003).
