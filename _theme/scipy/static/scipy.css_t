@@ -147,7 +147,7 @@ td.field-body blockquote {
 td.field-body blockquote p,
 dl.class blockquote p,
 dl.function blockquote p,
-dl.method blockquote p 
+dl.method blockquote p
 {
     font-family: inherit;
     font-size: inherit;
@@ -242,6 +242,10 @@ table.docutils {
     margin-bottom: 9.5px;
 }
 
+table.align-default {  /* left align tables like in old Sphinx */
+    margin-left: 0;
+    margin-right: auto;
+}
 
 /*
  * Admonitions
