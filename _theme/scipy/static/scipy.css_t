@@ -236,6 +236,9 @@ table.citation {
 
 table.docutils td, table.docutils th {
     border: none;
+    /* align column names (left col) to first line of
+       multi-line descriptions (right col) */
+    vertical-align: top;
 }
 
 table.docutils {
