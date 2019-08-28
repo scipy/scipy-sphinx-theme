@@ -263,7 +263,21 @@
     {%- endif %}
     </ul>
     </div>
+
+    <!-- Google translator -->
+    <div class="row-fluid">
+      <div id="google_translate_element" style="text-align: center; padding-left: 30%; padding-right:40%; width:128px;"></div>
+
+        <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+        </script>
+
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      </div>
     </div>
+
     </div>
 {%- endblock %}
   </body>
