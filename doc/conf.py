@@ -16,8 +16,8 @@ pygments_style = 'sphinx'
 
 # -- Options for HTML output ---------------------------------------------------
 
-html_theme = 'scipy'
-html_theme_path = ['_theme']
+html_theme = 'scipy_sphinx_theme'
+#html_theme_path = ['_theme']
 #html_logo = '_static/scipyshiny_small.png'
 html_static_path = ['_static']
 html_theme_options = {

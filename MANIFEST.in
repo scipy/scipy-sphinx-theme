@@ -1,0 +1,13 @@
+include MANIFEST.in
+include LICENSE.txt
+include README.rst
+include setup.py
+
+graft scipy_sphinx_theme
+
+# Exclude patterns from any directory
+global-exclude *~
+global-exclude *.py[cod]
+global-exclude .git
+global-exclude .ipynb_checkpoints
+global-exclude .DS_Store
