@@ -14,7 +14,6 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   README
    test_optimize
    test_autodoc
    test_autodoc_2
